@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #3D3833;
+    background-color: #F2EDE6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .cursor-dot {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #D4A853;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-[120px] px-5 md:px-8;
+  }
+
+  .content-max-width {
+    @apply max-w-[1200px] mx-auto;
+  }
+}
