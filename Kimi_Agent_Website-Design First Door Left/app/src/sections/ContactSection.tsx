@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MapPin, Phone, Mail, Youtube, Instagram } from '../components/Icons';
+import { MapPin, Mail, Youtube, Instagram } from '../components/Icons';
 import SectionHeader from './SectionHeader';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -41,13 +41,6 @@ export default function ContactSection() {
                 <p className="font-inter text-[18px] text-fdl-body">Tholey, Deutschland</p>
               </div>
             </div>
-
-            <a href="tel:+491758837357" className="flex items-start gap-4 group">
-              <Phone className="w-6 h-6 text-fdl-primary shrink-0 mt-0.5" />
-              <p className="font-inter text-[18px] text-fdl-body group-hover:text-fdl-primary transition-colors">
-                +49 175 883 7357
-              </p>
-            </a>
 
             <a href="mailto:firstdoorleft@gmx.de" className="flex items-start gap-4 group">
               <Mail className="w-6 h-6 text-fdl-primary shrink-0 mt-0.5" />

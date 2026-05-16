@@ -1,17 +1,17 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Instagram } from '../components/Icons';
 import SectionHeader from './SectionHeader';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const CONCERTS = [
-  { day: '15', month: 'JUN', year: '2025', name: 'Sommerfest Tholey' },
-  { day: '12', month: 'JUL', year: '2025', name: 'Wein & Musik Abend' },
-  { day: '23', month: 'AUG', year: '2025', name: 'Hochzeitsmesse Saarbrücken' },
-  { day: '06', month: 'SEP', year: '2025', name: 'Kulturherbst Festival' },
-  { day: '18', month: 'OKT', year: '2025', name: 'Herbstball St. Wendel' },
+  { day: '04', month: 'JUL', year: '2026', name: 'Waderner Marktsommer' },
+  { day: '12', month: 'JUL', year: '2026', name: 'Dorffest Überroth' },
+  { day: '01', month: 'AUG', year: '2026', name: 'Feuerwehrfest Dorf im Bohnental' },
+  { day: '15', month: 'AUG', year: '2026', name: 'Feuerwehrfest Scheuern' },
+  { day: '22', month: 'AUG', year: '2026', name: 'Dämmerschoppen Bardenbach' },
+  { day: '05', month: 'SEP', year: '2026', name: 'Weinfest Scheuern' },
 ];
 
 export default function ConcertsSection() {
@@ -77,19 +77,6 @@ export default function ConcertsSection() {
 
             </div>
           ))}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-12">
-          <a
-            href="https://www.instagram.com/firstdoorleft/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 font-inter text-[14px] text-fdl-primary hover:underline transition-all"
-          >
-            <Instagram className="w-4 h-4" />
-            Weitere Termine auf Instagram
-          </a>
         </div>
       </div>
     </section>
